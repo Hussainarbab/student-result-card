@@ -52,4 +52,13 @@ button:hover{
 
 table{
     background-color: white;
+    border: 2px solid rgb(235, 19, 19);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+table td ,th{
+    border: 3px solid black;
+    padding: 10px;
 }

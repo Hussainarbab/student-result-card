@@ -1,4 +1,7 @@
+let sno = 1; 
+
 function add() {
+    
     let naam = document.getElementById("name").value;
     let father = document.getElementById("fname").value;
     let clas = document.getElementById("clas").value;
@@ -6,10 +9,32 @@ function add() {
     let tmarks = document.getElementById("tmarks").value;
     let omarks = document.getElementById("omarks").value;
 
-    document.getElementById("heading1").innerHTML = naam;
-    document.getElementById("heading2").innerHTML = father;
-    document.getElementById("heading3").innerHTML = clas;
-    document.getElementById("heading4").innerHTML = rollnb;
-    document.getElementById("heading5").innerHTML = tmarks;
-    document.getElementById("heading6").innerHTML = omarks;
+  
+    if (naam === "" || father === "" || clas === "" || rollnb === "" || tmarks === "" || omarks === "") {
+        alert("Please fill all fields");
+        return;
+    }
+
+    let table = document.getElementById("student-table");
+    let newRow = table.insertRow(); 
+
+    newRow.innerHTML = `
+        <td>${sno}</td>
+        <td>${naam}</td>
+        <td>${father}</td>
+        <td>${clas}</td>
+        <td>${rollnb}</td>
+        <td>${tmarks}</td>
+        <td>${omarks}</td>
+    `;
+
+    sno++; 
+
+    
+    document.getElementById("name").value = "";
+    document.getElementById("fname").value = "";
+    document.getElementById("clas").value = "";
+    document.getElementById("rollno").value = "";
+    document.getElementById("tmarks").value = "";
+    document.getElementById("omarks").value = "";
 }
