@@ -29,6 +29,16 @@ input {
     font-size: 1.1rem;
     border-radius: 6px;
 }
+input:hover{
+    background-color: rgb(150, 216, 216);
+}
+
+tbody:hover {background-color: black;
+color: white;
+border-color: white;
+
+}
+
 
 button {
     padding: 0.7rem 5rem;
@@ -59,6 +69,7 @@ table td, th {
     border: 2px solid black;
     padding: 10px;
     font-size: 1rem;
+    /* background-color: rgb(208, 241, 241); */
 }
 
 
