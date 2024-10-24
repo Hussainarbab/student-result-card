@@ -20,6 +20,14 @@ body {
     margin: 1.5rem 0;
 }
 
+
+#search{
+
+
+    width: 15%;
+    margin-left: 24%;
+}
+
 input {
     width: 80%;
     max-width: 500px;

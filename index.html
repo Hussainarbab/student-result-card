@@ -9,7 +9,7 @@
 <body>
     <section id="sec1">
         <h1>Student Result</h1>
-
+    
         <input type="text" id="name" placeholder="Name"> <br>
         <input type="text" id="fname" placeholder="Father Name"><br>
         <input type="text" id="clas" placeholder="Class"> <br>
@@ -17,9 +17,14 @@
         <input type="number" id="tmarks" placeholder="Total Marks"> <br>
         <input type="number" id="omarks" placeholder="Obtain Marks"> <br>
         <button onclick="add()">Add</button>
+        
     </section>
+    
 
     <section>
+
+        <input type="text" id="search" placeholder="Search by name or class" onkeyup="filterTable()"> <br>
+
     
         <table>
             <thead>
