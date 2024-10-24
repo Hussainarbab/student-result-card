@@ -33,9 +33,10 @@ input:hover{
     background-color: rgb(150, 216, 216);
 }
 
-tbody:hover {background-color: black;
-color: white;
-border-color: white;
+tbody:hover {
+    background-color: rgba(29, 26, 26, 0.322);
+color: black;
+/* border-color: white; */
 
 }
 
