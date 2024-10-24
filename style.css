@@ -1,64 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
-
-background-color: rgba(0, 0, 0, 0.884);
-
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+    font-family: Arial, sans-serif;
 }
 
-
-#sec1{
+#sec1 {
     text-align: center;
+    padding: 20px;
 }
 
-
-
-#sec1 h1{
-
-
+#sec1 h1 {
     color: white;
-    font-size: 3rem;
-    margin: 2rem 0;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
 }
 
-
-input{
-
-
-    width: 20%;
-    padding: 0.7rem 0;
+input {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.7rem;
     margin-top: 0.5rem;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 6px;
 }
-button{
+
+button {
     padding: 0.7rem 1rem;
     margin-top: 0.6rem;
-    /* margin-left: 20rem; */
     font-size: 1rem;
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
-button:hover{
+
+button:hover {
     background-color: bisque;
     cursor: pointer;
 }
 
 
-table{
+table {
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 1000px;
     background-color: white;
     border: 2px solid rgb(235, 19, 19);
-    width: 100%;
     text-align: center;
     border-collapse: collapse;
-    
 }
-table td ,th{
-    border: 3px solid black;
+
+table td, th {
+    border: 2px solid black;
     padding: 10px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    #sec1 h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        width: 90%; 
+        font-size: 1rem;
+    }
+
+    table td, th {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #sec1 h1 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 95%; 
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    table td, th {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
 }
