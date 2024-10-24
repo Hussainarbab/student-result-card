@@ -31,11 +31,12 @@ input {
 }
 
 button {
-    padding: 0.7rem 1rem;
-    margin-top: 0.6rem;
+    padding: 0.7rem 5rem;
+    margin-top: 1rem;
     font-size: 1rem;
-    border-radius: 10px;
+    border-radius: 8px;
     transition: background-color 0.3s;
+    font-size: 1.3rem;
 }
 
 button:hover {
